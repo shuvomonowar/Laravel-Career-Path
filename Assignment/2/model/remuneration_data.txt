@@ -1,0 +1,4 @@
+a:3:{i:0;s:5:"qwqwq";i:1;s:6:"Income";i:2;i:122;}
+a:3:{i:0;s:4:"qwqw";i:1;s:7:"Expense";i:2;i:1212;}
+a:3:{i:0;s:5:"wddsd";i:1;s:6:"Income";i:2;i:121;}
+a:3:{i:0;s:6:"dssdsd";i:1;s:7:"Expense";i:2;i:122;}
