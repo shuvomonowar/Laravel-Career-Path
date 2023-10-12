@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <style>
+      .logInStyle fieldset {
+        margin-left: 600px;
+        margin-right: 600px;
+      }
+
+      .logInStyle #logDetStyle,
+      #btnStyle {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <div class="logInStyle">
+      <form action="/user_login">
+        <fieldset>
+          <legend>Login</legend>
+          <br />
+          <div id="logDetStyle">
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="password">Password</label><br />
+            <input type="text" id="password" name="password" /><br /><br />
+          </div>
+        </fieldset>
+        <br />
+        <div id="btnStyle">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
