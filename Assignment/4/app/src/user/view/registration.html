@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <style>
+      .regStyle fieldset {
+        margin-left: 600px;
+        margin-right: 600px;
+      }
+
+      .regStyle #regDetStyle,
+      #btnStyle {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <div class="regStyle">
+      <form action="/user_register">
+        <fieldset>
+          <legend>Registration</legend>
+          <br />
+          <div id="regDetStyle">
+            <label for="fname">First Name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="password">Password</label><br />
+            <input type="text" id="password" name="password" /><br /><br />
+          </div>
+        </fieldset>
+        <br />
+        <div id="btnStyle">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
