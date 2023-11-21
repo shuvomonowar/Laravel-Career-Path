@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo/favicon.ico') }}">
+    <script src="{{ asset('js/resume_download.js') }}"></script>
     @vite('resources/css/app.css')
 </head>
 <body>
@@ -21,7 +22,7 @@
     </div>
     <br><br>
     <div class="mx-[20rem]">
-        <button class="bg-blue-950 text-white p-2.5 border-solid rounded-md hover:bg-green-950 hover:border-none hover:ring-2 hover:ring-blue-600">{{ 'Download Resume' }}</button>
+        <button type="button" class="bg-blue-950 text-white p-2.5 border-solid rounded-md hover:bg-green-950 hover:border-none hover:ring-2 hover:ring-blue-600" onclick="downloadResume()">{{ 'Download Resume' }}</button>
     </div>
     <br><br>
     <hr class="h-0.5 bg-gray-300 mx-[20rem]">
