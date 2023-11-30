@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\UserLoginController;
-use App\Http\Controllers\UserRegisterController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfileEditController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SinglePostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,10 +22,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('register', [UserRegisterController::class, 'showRegisterPage'])->name('register');
-Route::post('register', [UserRegisterController::class, 'getValidateData']);
-Route::get('login', [UserLoginController::class, 'showLogInPage'])->name('login');
-Route::post('login', [UserLoginController::class, 'getValidateData']);
-Route::get('profile', function () {
-    return view('info');
-})->name('profile');
+Route::get('register', [RegisterController::class, 'showRegisterPage'])->name('register');
+Route::post('register', [RegisterController::class, 'storeRegisterData']);
+Route::get('login', [LoginController::class, 'showLogInPage'])->name('login');
+Route::post('login', [LoginController::class, 'getUserData']);
+Route::get('profile',[ProfileController::class, 'showProfile'])->name('profile');
+Route::get('profile/edit-profile', [ProfileEditController::class, 'getProfileEdit'])->name('profile/edit-profile');
+Route::post('profile/edit-profile', [ProfileEditController::class, 'saveProfileEdit']);
+Route::get('single-post', [SinglePostController::class, 'showSinglePost'])->name('single-post');
